@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import {
     Collapse,
     Navbar,
@@ -7,18 +7,18 @@ import {
     Nav,
     NavItem,
     NavLink,
-    Container
-} from 'reactstrap'
+    Container,
+} from "reactstrap";
 
 class AppNavbar extends Component {
     state = {
-        isOpen: false
-    }
+        isOpen: false,
+    };
     toggle = () => {
         this.setState({
-            isOpen: !this.state.isOpen
-        })
-    }
+            isOpen: !this.state.isOpen,
+        });
+    };
 
     render() {
         return (
@@ -37,8 +37,8 @@ class AppNavbar extends Component {
                     </Container>
                 </Navbar>
             </div>
-        )
+        );
     }
 }
 
-export default AppNavbar
+export default AppNavbar;
