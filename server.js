@@ -15,13 +15,13 @@ app.use(express.json())
 //DB config
 mongoose
     .connect(process.env.MONGODB_URL)
-    .then(()=>console.log('DB Connected'))
-    .catch(err=>console.log(err))
+    .then(() => console.log('DB Connected'))
+    .catch(err => console.log(err))
 
 //routes
-app.use('/api/items',itemsRoute)
+app.use('/api/items', itemsRoute)
 
 
 //listener
 const port = process.env.PORT || 9000
-app.listen(port,()=>console.log(`Server Started in ${port}`))
+app.listen(port, () => console.log(`Server Started in ${port}`))
